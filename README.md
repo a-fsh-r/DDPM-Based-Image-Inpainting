@@ -17,7 +17,7 @@ In this project, **incomplete images** from the **CelebA dataset** are transform
   Easily swap between standard DDPM schedules or your own custom diffusion schedules.  
 
 - 🎛️ **Parameter Tuning**  
-  Control jumps (`j`) and repetitions (`r`) for different resampling behaviors and artistic effects.
+  Control jumps (`j`) and resampling (`r`) for different resampling behaviors and artistic effects.
 
 ## 🏗️ Usage Example
 
