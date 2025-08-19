@@ -22,12 +22,15 @@ In this project, **incomplete images** from the **CelebA dataset** are transform
 ## 🏗️ Usage Example
 
 ```python
-from repaint import repaint, Model, CustomScheduler
-import torch
+model_id = "path"
 
-# Load model and scheduler
-model = Model(pretrained_model).to(device)
-scheduler = CustomScheduler.from_DDPMScheduler(pretrained_scheduler)
+model = UNet2DModel.from_pretrained(model_id)
+scheduler = DDPMScheduler.from_pretrained(model_id)
+model = Model(model).to(device)
+scheduler = CustomScheduler.from_DDPMScheduler(scheduler)
+
+original_image = 'path'
+mask = 'path'
 
 # Run RePaint
 output = repaint(original_image, mask, model, scheduler)
