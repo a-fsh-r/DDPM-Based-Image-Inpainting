@@ -1,4 +1,4 @@
-# 🎨✨ RePaint Diffusion Inpainting
+# 🎨✨ RePaint - Diffusion-Based Inpainting
 
 In this project, **incomplete images** from the **CelebA dataset** are transformed into fully reconstructed masterpieces using **Diffusion-Based Inpainting (DDPM)** 🖌️. Inspired by the [RePaint paper](https://arxiv.org/abs/2201.09865) 📰.
 
@@ -29,12 +29,13 @@ scheduler = DDPMScheduler.from_pretrained(model_id)
 model = Model(model).to(device)
 scheduler = CustomScheduler.from_DDPMScheduler(scheduler)
 
-original_image = 'path'
-mask = 'path'
+original_image = "path"
+mask = "path"
 
 # Run RePaint
 output = repaint(original_image, mask, model, scheduler)
 ```
+This workflow can be applied not only to the CelebA dataset, but also to any custom dataset where incomplete or masked images need restoration.
 
 ## 💡 Tips & Recommendations
 
