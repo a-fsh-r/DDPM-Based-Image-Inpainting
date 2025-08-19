@@ -17,7 +17,7 @@ In this project, **incomplete images** from the **CelebA dataset** are transform
   Easily swap between standard DDPM schedules or your own custom diffusion schedules.  
 
 - 🎛️ **Parameter Tuning**  
-  Control jumps (`j`) and resampling (`r`) for different resampling behaviors and artistic effects.
+  Control jumps (`j`) and resampling (`r`) for different behaviors and artistic effects.
 
 ## 🏗️ Usage Example
 
@@ -36,8 +36,7 @@ output = repaint(original_image, mask, model, scheduler)
 ## 💡 Tips & Recommendations
 
 - 🚀 **GPU Recommendation:** Use NVIDIA A100 or equivalent for faster processing and to handle larger images.  
-- 🎛️ **Parameter Tuning:** Adjust `j` (jumps) and `r` (repetitions) to control stochastic forward steps and achieve different artistic effects.  
-- 🖌️ **Mask Combinations:** Combine multiple masks for selective inpainting of complex images.
+- 🎛️ **Parameter Tuning:** Adjust `j` (jumps) and `r` (resampling).
 
 ## 📚 References
 
